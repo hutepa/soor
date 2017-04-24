@@ -1,0 +1,396 @@
+.day {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image:url('../img/sama.gif');
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-position: center center;
+    background-attachment: fixed;
+
+
+}
+
+.night {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image:url('../img/sama_night.gif');
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-position: center center;
+    background-attachment: fixed;
+
+
+}
+#btn1 {
+    height:10%;    
+    top : 82%;
+    left: 36.5%;
+    width: 28%;
+
+    background:url('../img/button.gif') ;
+    background-size:cover;
+    background-repeat:no-repeat;
+    border: none;
+    color: white; 
+    background-color: transparent; 
+    border-color: transparent; 
+    cursor: pointer; 
+    position: absolute;
+}
+#login {
+    height:30%;
+    top : 82%;
+    left: 36%;
+    width: 30%;
+
+
+    border: none;
+
+    background-color: transparent;
+    border-color: transparent;
+    cursor: pointer;
+    position: absolute;
+}
+#verify {
+    height:30%;
+    top : 82%;
+    left: 36%;
+    width: 30%;
+
+
+    border: none;
+
+    background-color: transparent;
+    border-color: transparent;
+    cursor: pointer;
+    position: absolute;
+}
+#cbox {
+    width: 3%;
+    height: 4%;   
+    top : 95%;
+    left: 36.5%;
+    position: absolute;
+    background:url('../img/cbox.gif') ;
+    background-size:contain;
+    background-repeat:no-repeat;
+
+}
+#mytext {
+    top : 93%;
+    left: 40%;
+    width: 30%;
+    height: 4%;
+    
+    position: absolute;
+    
+}
+
+p span {
+   text-decoration: underline;
+}
+#blanket {
+    background-color:#111;
+    opacity: 0.65;
+    *background:none;
+    position:absolute;
+    z-index: 9001;
+    top:0px;
+    left:0px;
+    width:100%;
+}
+
+#popUpDiv {
+    background-color:#ffffff;
+    position:absolute;
+    *background:none;
+    width:50%;
+    height:50%;
+    border:5px solid #000;
+    z-index: 9002;
+    overflow:auto;
+}
+
+#popUpDiv a {position:relative; top:20px; left:20px}
+
+#english {
+
+    margin-top: 10%;
+    margin-left: 2%;
+    margin-right: 2%;
+    background-color:#f0f0f0;
+    font-size: 70%;
+
+}
+#arabic {
+    direction: rtl;
+    margin-left: 2%;
+    margin-right: 2%;
+    background-color:#f0f0f0;
+    font-size: 70%;
+
+
+}
+/* Phone ----------- */
+@media only screen and (max-width : 480px) {
+/* Styles */
+
+.day {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image:url('../img/phone.gif');
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-position: center center;
+    background-attachment: fixed;
+
+
+}
+.night {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image:url('../img/phone_night.gif');
+    background-repeat:no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    position: absolute;
+}
+#btn1 {
+    height:10%;    
+    top : 83%;
+    left: 25%;
+    width: 68%;
+
+    background:url('../img/button.gif') ;
+    background-size:contain;
+    background-repeat:no-repeat;
+    border: none;
+    color: white; 
+    background-color: transparent; 
+    border-color: transparent; 
+    cursor: pointer; 
+    position: absolute;
+}
+
+.terms {
+   float: left;
+   clear: none;
+}
+#cbox {
+    width: 3%;
+    height: 4%;   
+    top : 96%;
+    left: 10%;
+    position: absolute;
+    background:url('../img/cbox.gif') ;
+    background-size:contain;
+    background-repeat:no-repeat;
+    margin: 0;
+
+}
+#mytext {
+    top : 91%;
+    left: 15%;
+    width: 70%;
+    height: 4%;
+    
+    position: absolute;
+    
+}
+
+p span {
+   text-decoration: underline;
+}
+
+    #blanket {
+        background-color:#111;
+        opacity: 0.65;
+        *background:none;
+        position:absolute;
+        z-index: 9001;
+        top:0px;
+        left:0px;
+        width:100%;
+    }
+
+    #popUpDiv {
+        background-color:#ffffff;
+        position:absolute;
+        *background:none;
+        width:50%;
+        height:50%;
+        border:5px solid #000;
+        z-index: 9002;
+        overflow:auto;
+    }
+
+    #popUpDiv a {position:relative; top:20px; left:20px}
+
+    #english {
+
+        margin-top: 10%;
+        margin-left: 2%;
+        margin-right: 2%;
+        background-color:#f0f0f0;
+        font-size: 70%;
+
+    }
+    #arabic {
+        direction: rtl;
+        margin-left: 2%;
+        margin-right: 2%;
+        background-color:#f0f0f0;
+        font-size: 70%;
+
+
+    }
+
+}
+
+/* iPad */
+@media only screen and (min-device-width : 481px) and (max-device-width : 768px) {
+/* Styles */
+
+.day {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image:url('../img/pad.gif');
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-position: center center;
+    background-attachment: fixed;
+    position: absolute;
+
+
+}
+
+.night {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image:url('../img/pad_night.gif');
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-position: center center;
+    background-attachment: fixed;
+    position: absolute;
+
+
+}
+#btn1 {
+    height:10%;    
+    top : 83%;
+    left: 25%;
+    width: 68%;
+
+    background:url('../img/button.gif') ;
+    background-size:contain;
+    background-repeat:no-repeat;
+    border: none;
+    color: white; 
+    background-color: transparent; 
+    border-color: transparent; 
+    cursor: pointer; 
+    position: absolute;
+}
+
+.terms {
+   float: left;
+   clear: none;
+}
+#cbox {
+    width: 3%;
+    height: 4%;   
+    top : 96%;
+    left: 10%;
+    position: absolute;
+    background:url('../img/cbox.gif') ;
+    background-size:contain;
+    background-repeat:no-repeat;
+    margin: 0;
+
+}
+#mytext {
+    top : 91%;
+    left: 15%;
+    width: 70%;
+    height: 4%;
+    
+    position: absolute;
+    
+}
+
+p span {
+   text-decoration: underline;
+}
+
+    #blanket {
+        background-color:#111;
+        opacity: 0.65;
+        *background:none;
+        position:absolute;
+        z-index: 9001;
+        top:0px;
+        left:0px;
+        width:100%;
+    }
+
+    #popUpDiv {
+        background-color:#ffffff;
+        position:absolute;
+        *background:none;
+        width:50%;
+        height:50%;
+        border:5px solid #000;
+        z-index: 9002;
+        overflow:auto;
+    }
+
+    #popUpDiv a {position:relative; top:20px; left:20px}
+
+    #english {
+
+        margin-top: 10%;
+        margin-left: 2%;
+        margin-right: 2%;
+        background-color:#f0f0f0;
+        font-size: 70%;
+
+    }
+    #arabic {
+        direction: rtl;
+        margin-left: 2%;
+        margin-right: 2%;
+        background-color:#f0f0f0;
+        font-size: 70%;
+
+
+    }
+
+}
+
+

@@ -1,0 +1,55 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Welcome to Sama</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="initial-scale=1">
+        <link rel="stylesheet" href="/resources/css/normalize.css">
+        <link rel="stylesheet" href="/resources/css/jquery-ui.css">
+        <link rel="stylesheet" href="/resources/css/mystyle.css">
+        <script src="/resources/js/jquery-1.12.0.min.js"></script>
+        <script src="/resources/js/jquery-ui.js"></script>
+        <script src="/resources/js/jquery.validate.min.js"></script>
+
+
+        <script src="/resources/js/css-pop.js"></script>
+        <script src="/resources/js/mahmo.js"></script>
+
+    </head>
+    <body >
+
+        <div id="connect">
+		    <form method="post" id="connectForm">
+                <input type="hidden" name="tsantsa" id="tsantsa" value="">
+                <button id="btn1" type="submit">Connect</button>
+            </form>
+        </div>
+
+        <div id="terms">
+           <div id="cbox"></div>
+
+            <div id="blanket" style="display:none;"></div>
+            <div id="popUpDiv" style="display:none;">
+                <a href="#" onclick="popup('popUpDiv')" >Close</a>
+                <div id="english">
+
+                </div>
+                <div id="arabic" >
+
+
+                </div>
+            </div>
+
+           <div id="mytext">
+              <p>I accept <span><a href="#" onclick="popup('popUpDiv')">terms and conditions</a></span></p>
+           </div>
+        </div>
+
+
+
+
+
+
+    </body>
+</html>

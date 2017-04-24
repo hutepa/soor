@@ -1,0 +1,69 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Welcome to Sama</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="initial-scale=1">
+        <link rel="stylesheet" href="/resources/css/normalize.css">
+        <link rel="stylesheet" href="/resources/css/jquery-ui.css">
+        <link rel="stylesheet" href="/resources/css/mystyle.css">
+        <link rel="stylesheet" href="/resources/css/intlTelInput.css">
+        <script src="/resources/js/jquery-1.12.0.min.js"></script>
+        <script src="/resources/js/jquery-ui.js"></script>
+        <script src="/resources/js/jquery.validate.min.js"></script>
+        <script src="/resources/js/intlTelInput.js"></script>
+
+        <script src="/resources/js/css-pop.js"></script>
+        <script src="/resources/js/mahmo.js"></script>
+
+    </head>
+    <body >
+
+        <div id="login">
+            <form method="post" name="lForm" id="lForm">
+                <fieldset>
+                    <legend>User verification:</legend>
+                    <label for="cphone" >Phone: </label><input name="cphone" type="tel" id="cphone" >
+                    <input type="hidden" name="phone" id="phone" value=""><br><br>
+                    <button class="ui-button ui-widget ui-corner-all" id="btn2" type="submit">send PIN code</button>
+                </fieldset>
+            </form>
+        </div><!--end of container-->
+
+
+
+        <script>
+            var telInput = $("#cphone"),
+                errorMsg = $("#error-msg"),
+                validMsg = $("#valid-msg");
+            telInput.intlTelInput({
+                initialCountry: "kw",
+                utilsScript: "/resources/js/utils.js"
+            });
+            var reset = function() {
+                telInput.removeClass("error");
+                errorMsg.addClass("hide");
+                validMsg.addClass("hide");
+            };
+            telInput.blur(function() {
+                reset();
+                if ($.trim(telInput.val())) {
+                    if (telInput.intlTelInput("isValidNumber")) {
+                        validMsg.removeClass("hide");
+                    } else {
+                        telInput.addClass("error");
+                        errorMsg.removeClass("hide");
+                    }
+                }
+            });
+            telInput.on("keyup change", reset);
+            $("#lForm").submit(function() {
+                $("#phone").val($("#cphone").intlTelInput("getNumber"));
+            });
+        </script>
+
+
+
+    </body>
+</html>

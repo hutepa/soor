@@ -1,0 +1,6 @@
+-P PREROUTING ACCEPT
+-P OUTPUT ACCEPT
+-A PREROUTING -s 192.168.1.80/32 -p tcp -j TRACE 
+-A PREROUTING -s 192.168.1.80/32 -p tcp -j LOG --log-prefix "My PREROUTING: " --log-level 7 
+-A OUTPUT -s 192.168.1.80/32 -p tcp -j TRACE 
+-A OUTPUT -s 192.168.1.80/32 -p tcp -j LOG --log-prefix "My OUT: " --log-level 7 

@@ -1,0 +1,75 @@
+.day {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image:url('../img/sama.png');
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-position: center center;
+    background-attachment: fixed;
+
+
+}
+
+.night {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image:url('../img/sama_night.png');
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-position: center center;
+    background-attachment: fixed;
+
+
+}
+#btn1 {
+    height:10%;
+    top : 82%;
+    left: 36.5%;
+    width: 28%;
+
+    background:url('../img/button.png') ;
+    background-size:cover;
+    background-repeat:no-repeat;
+    border: none;
+    color: white;
+    background-color: transparent;
+    border-color: transparent;
+    cursor: pointer;
+    position: absolute;
+}
+.terms {
+    float: left;
+    clear: none;
+}
+#cbox {
+    width: 3%;
+    height: 4%;
+    top : 95%;
+    left: 36.5%;
+    position: absolute;
+    background:url('../img/cbox.png') ;
+    background-size:contain;
+    background-repeat:no-repeat;
+
+}
+#mytext {
+    top : 83%;
+    left: 20%;
+    width: 60%;
+    height: 4%;
+
+    position: absolute;
+
+}
+
+p span {
+    text-decoration: underline;
+}
